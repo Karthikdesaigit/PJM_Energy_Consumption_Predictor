@@ -22,7 +22,7 @@ def load_data():
 df = load_data()
 
 # Resample to daily average
-daily_df = df['PJMW_hourly'].resample('D').mean().to_frame()
+daily_df = df['PJMW_MW'].resample('D').mean().to_frame()
 daily_df.columns = ['y']  # Rename for consistency
 daily_df.index.name = 'ds'
 
