@@ -13,7 +13,7 @@ st.title("🔌 PJM Energy Consumption Forecasting App")
 @st.cache_data
 def load_data():
     df = pd.read_csv(
-        "PJM_hourly.csv",  # uploaded filename
+        "PJMW_hourly.csv",  # uploaded filename
         parse_dates=["Datetime"],
         index_col="Datetime"
     )
